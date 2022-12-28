@@ -5,9 +5,9 @@
   "display": "fullscreen",
   "name": "PWA Page",
   "orientation": "any",
-  "scope": "/",
+  "scope": "/PWA/",
   "short_name": "PWA Page",
-  "start_url": "/",
+  "start_url": "/PWA/",
   "theme_color": "#ffffff",
   "categories": [
     "education"
