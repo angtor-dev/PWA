@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "io.github.angtor_dev.twa",
+                     "sha256_cert_fingerprints": ["CC:20:E9:23:FF:3D:24:8A:34:03:A7:30:ED:C2:71:46:D7:9E:94:F8:BD:23:F2:4A:BF:C5:82:DF:D5:CF:39:7C"] }
+      }
+]
