@@ -5,6 +5,8 @@ document.getElementById('notifications').addEventListener("click", () => {
         if (result == "granted") {
             console.log("Permiso otorgado")
             randomNotification();
+        } else {
+            console.log("No se otorgo el permiso")
         }
     })
 })
