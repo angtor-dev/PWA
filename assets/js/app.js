@@ -20,5 +20,9 @@ function randomNotification() {
         icon: notifImg,
     }
 
-    new Notification(notifTitle, options)
+    var notif = new Notification(notifTitle, options)
+
+    notif.onclick(() => {
+        window.open("www.google.com", "_blank")
+    })
 }
