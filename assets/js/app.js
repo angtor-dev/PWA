@@ -26,3 +26,31 @@ function randomNotification() {
         window.open("https://www.google.com/", "_blank")
     }
 }
+
+function showNotification() {
+    Notification.requestPermission((result) => {
+        if (result === "granted") {
+            navigator.serviceWorker.ready.then((registration) => {
+                registration.showNotification("Vibration Sample", {
+                    body: "Buzz! Buzz!",
+                    image: "assets/img/favicon.png",
+                    icon: "assets/img/favicon.png",
+                    vibrate: [200, 100, 200, 100, 200, 100, 200],
+                    tag: "vibration-sample",
+                });
+            });
+        }
+    });
+}
+
+const registerServiceWorker = async () => {
+    const swRegistration = await navigator.serviceWorker.register('notifications-sw.js');
+    return swRegistration;
+}
+
+const main = async () => {
+    const swRegistration = await registerServiceWorker();
+    console.log("notifications-sw.js Registered");
+}
+
+main()
