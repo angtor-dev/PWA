@@ -23,6 +23,6 @@ function randomNotification() {
     var notif = new Notification(notifTitle, options)
 
     notif.onclick = () => {
-        window.open("www.google.com", "_blank")
+        window.open("https://www.google.com/", "_blank")
     }
 }
