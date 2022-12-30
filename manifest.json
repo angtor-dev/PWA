@@ -5,14 +5,20 @@
   "display": "fullscreen",
   "name": "PWA Page",
   "orientation": "any",
-  "scope": "/",
+  "scope": "/PWA/",
   "short_name": "PWA Page",
-  "start_url": "/",
+  "start_url": "/PWA/",
   "theme_color": "#ffffff",
   "categories": [
     "education"
   ],
   "icons": [
+    {
+      "src": "assets/img/favicon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "assets/img/windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
